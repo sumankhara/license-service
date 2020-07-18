@@ -1,0 +1,4 @@
+databaseChangeLog:
+    - include:
+        file: license-tbl.yaml
+        relativeToChangelogFile: true

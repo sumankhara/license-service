@@ -1,0 +1,50 @@
+databaseChangeLog:
+- changeSet:
+    id: 1
+    author: sumankhara
+    logicalFilePath: license-tbl.yaml
+    changes:
+    - createTable:
+        tableName: licenses
+        remarks: |-
+                longName: licenses
+                description: This table stores license information.
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: license_pk
+            name: license_id
+            type: VARCHAR(50)
+            remarks: |-
+                longName: LicenseIdentifier
+        - column:
+            name: description
+            type: LONGTEXT
+            remarks: |-
+                longName: description
+        - column:
+            constraints:
+              nullable: false
+            name: organization_id
+            type: VARCHAR(50)
+            remarks: |-
+                longName: organization_id
+        - column:
+            constraints:
+              nullable: false
+            name: product_name
+            type: VARCHAR(50)
+            remarks: |-
+                longName: product_name
+        - column:
+            name: license_type
+            type: VARCHAR(50)
+            remarks: |-
+                longName: license_type
+        - column:
+            name: comment
+            type: LONGTEXT
+            remarks: |-
+                longName: comment
