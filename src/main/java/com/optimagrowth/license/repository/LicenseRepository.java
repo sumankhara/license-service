@@ -9,6 +9,8 @@ import com.optimagrowth.license.model.License;
 
 @Repository
 public interface LicenseRepository extends CrudRepository<License, String> {
+	
+	public License findByLicenseId(String licenseId);
 
 	public List<License> findByOrganizationId(String organizationId);
 	

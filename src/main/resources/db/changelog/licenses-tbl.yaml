@@ -2,7 +2,7 @@ databaseChangeLog:
 - changeSet:
     id: 1
     author: sumankhara
-    logicalFilePath: license-tbl.yaml
+    logicalFilePath: licenses-tbl.yaml
     changes:
     - createTable:
         tableName: licenses
